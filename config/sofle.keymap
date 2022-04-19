@@ -14,6 +14,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 
 / {
     keymap {
@@ -25,8 +26,8 @@
     &kp ESCAPE        &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5                                     &kp NUMBER_6       &kp NUMBER_7     &kp NUMBER_8     &kp NUMBER_9         &kp NUMBER_0      &kp TILDE
        &kp TAB    &kp SINGLE_QUOTE       &kp COMMA         &kp DOT             &kp P         &kp Y                                            &kp F              &kp G            &kp C            &kp R                &kp L      &kp SLASH
  &kp BACKSPACE  &mt LEFT_CONTROL A  &mt LEFT_ALT O  &mt LEFT_GUI E  &mt LEFT_SHIFT U         &kp I                                            &kp D  &mt RIGHT_SHIFT H  &mt RIGHT_GUI T  &mt RIGHT_ALT N  &mt RIGHT_CONTROL S      &kp MINUS
-           &kp       &kp SEMICOLON           &kp Q           &kp J             &kp K         &kp X            &kp K_MUTE  &kp PAGE_UP         &kp B              &kp M            &kp W            &kp V                &kp Z  &kp BACKSLASH
-                               &kp             &kp             &kp         &kp SPACE           &kp                                              &kp         &kp RETURN              &kp              &kp                  &kp
+           &trans       &kp SEMICOLON           &kp Q           &kp J             &kp K         &kp X            &kp K_MUTE  &kp PAGE_UP         &kp B              &kp M            &kp W            &kp V                &kp Z  &kp BACKSLASH
+                               &trans             &trans             &trans         &kp SPACE           &trans                                              &trans         &kp RETURN              &trans              &trans                  &trans
             >;
           
           sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;

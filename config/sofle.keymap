@@ -28,6 +28,9 @@
            &kp       &kp SEMICOLON           &kp Q           &kp J             &kp K         &kp X            &kp K_MUTE  &kp PAGE_UP         &kp B              &kp M            &kp W            &kp V                &kp Z  &kp BACKSLASH
                                &kp             &kp             &kp         &kp SPACE           &kp                                              &kp         &kp RETURN              &kp              &kp                  &kp
             >;
+          
+          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+
         };
 
     };

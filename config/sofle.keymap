@@ -26,7 +26,7 @@
        &kp TAB    &kp SINGLE_QUOTE       &kp COMMA         &kp DOT             &kp P         &kp Y                                            &kp F              &kp G            &kp C            &kp R                &kp L      &kp SLASH
  &kp BACKSPACE  &mt LEFT_CONTROL A  &mt LEFT_ALT O  &mt LEFT_GUI E  &mt LEFT_SHIFT U         &kp I                                            &kp D  &mt RIGHT_SHIFT H  &mt RIGHT_GUI T  &mt RIGHT_ALT N  &mt RIGHT_CONTROL S      &kp MINUS
         &trans     &lt 1 SEMICOLON           &kp Q           &kp J             &kp K         &kp X            &kp K_MUTE  &kp PAGE_UP         &kp B              &kp M            &kp W            &kp V              &lt 1 Z  &kp BACKSLASH
-                            &trans          &trans          &trans         &kp SPACE           &kp                                              &kp         &kp RETURN            &mo 2           &trans               &trans
+                            &trans          &trans          &trans         &kp SPACE        &trans                                           &trans         &kp RETURN            &mo 2           &trans               &trans
             >;
         };
 

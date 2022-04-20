@@ -3,7 +3,8 @@
   "keymap": "unknown",
   "layout": "unknown",
   "layer_names": [
-    "default"
+    "default",
+    "Layer #1"
   ],
   "layers": [
     [
@@ -11,7 +12,13 @@
              "&kp TAB",   "&kp SINGLE_QUOTE",      "&kp COMMA",        "&kp DOT",            "&kp P",        "&kp Y",                                               "&kp F",             "&kp G",           "&kp C",           "&kp R",               "&kp L",     "&kp SLASH",
        "&kp BACKSPACE", "&mt LEFT_CONTROL A", "&mt LEFT_ALT O", "&mt LEFT_GUI E", "&mt LEFT_SHIFT U",        "&kp I",                                               "&kp D", "&mt RIGHT_SHIFT H", "&mt RIGHT_GUI T", "&mt RIGHT_ALT N", "&mt RIGHT_CONTROL S",     "&kp MINUS",
                  "&kp",      "&kp SEMICOLON",          "&kp Q",          "&kp J",            "&kp K",        "&kp X",           "&kp K_MUTE", "&kp PAGE_UP",        "&kp B",             "&kp M",           "&kp W",           "&kp V",               "&kp Z", "&kp BACKSLASH",
-                                       "&kp",            "&kp",            "&kp",        "&kp SPACE",          "&kp",                                                 "&kp",        "&kp RETURN",             "&kp",             "&kp",                 "&kp"
+                                       "&kp",            "&kp",            "&kp",        "&kp SPACE",          "&kp",                                                 "&kp",        "&kp RETURN",           "&mo 1",             "&kp",                 "&kp"
+    ], [
+       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",                               "&trans",         "&trans",         "&trans",          "&trans", "&trans", "&trans",
+       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",                               "&trans",         "&trans",         "&trans",          "&trans", "&trans", "&trans",
+       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",                               "&trans",         "&trans",   "&kp UP_ARROW",          "&trans", "&trans", "&trans",
+       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&kp LEFT_ARROW", "&kp DOWN_ARROW", "&kp RIGHT_ARROW", "&trans", "&trans",
+                 "&trans", "&trans", "&trans", "&trans", "&trans",                               "&trans",         "&trans",         "&trans",          "&trans", "&trans"
     ]
   ]
 }

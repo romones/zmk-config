@@ -26,6 +26,15 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
     };
     
     keymap {
@@ -36,7 +45,7 @@
             bindings = <
     &kp ESCAPE        &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5                                     &kp NUMBER_6       &kp NUMBER_7     &kp NUMBER_8     &kp NUMBER_9         &kp NUMBER_0      &kp GRAVE
        &kp TAB    &kp SINGLE_QUOTE       &kp COMMA         &kp DOT             &kp P         &kp Y                                            &kp F              &kp G            &kp C            &kp R                &kp L      &kp SLASH
- &kp BACKSPACE  &bhm LEFT_CONTROL A  &bhm LEFT_ALT O  &bhm LEFT_GUI E  &bhm LEFT_SHIFT U         &kp I                                            &kp D  &bhm RIGHT_SHIFT H  &bhm RIGHT_GUI T  &bhm RIGHT_ALT N  &bhm RIGHT_CONTROL S      &kp MINUS
+ &kp BACKSPACE  &hm LEFT_CONTROL A  &hm LEFT_ALT O  &hm LEFT_GUI E  &hm LEFT_SHIFT U         &kp I                                            &kp D  &hm RIGHT_SHIFT H  &hm RIGHT_GUI T  &hm RIGHT_ALT N  &hm RIGHT_CONTROL S      &kp MINUS
         &trans     &lt 1 SEMICOLON           &kp Q           &kp J             &kp K         &kp X            &kp K_MUTE  &kp PAGE_UP         &kp B              &kp M            &kp W            &kp V              &lt 1 Z  &kp EQUAL
                             &trans          &trans          &trans         &mt LA(LC(LS(LEFT_GUI))) SPACE        &trans                                           &trans         &kp RETURN            &mo 2           &trans               &trans
             >;

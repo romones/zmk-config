@@ -2,6 +2,26 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        bhm: balanced_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
 	keymap {
 		compatible = "zmk,keymap";
 
@@ -13,6 +33,7 @@
 	    &kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B &kp UP &kp DOWN   &kp LEFT &kp RIGHT  &kp N  &kp M   &kp COMMA &kp DOT &kp FSLH &kp RCTRL
 	                    &kp LGUI &kp DEL &kp RET &kp SPACE &kp TILDE  &kp RET   &kp SPACE &kp TAB &kp BSPC &kp RALT
 			>;
+		    sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 	};
 };

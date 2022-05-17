@@ -25,15 +25,60 @@
 	keymap {
 		compatible = "zmk,keymap";
 
+/*
+        &trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &trans  &trans  &trans  &trans  &trans 
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        &trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &trans  &trans  &trans  &trans  &trans 
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &trans  &trans  &trans  &trans  &trans  &trans 
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans &trans  &trans  &trans  &trans  &trans  &trans  &trans 
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                &trans  &trans  &trans  &trans  &trans    &trans &trans  &trans  &trans  &trans
+*/
+
 		default_layer {
 			bindings = <
-        &kp ESC   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                                      &kp N6 &kp N7  &kp N8    &kp N9  &kp N0   &kp GRAVE
-	    &kp TAB   &kp Q  &kp W  &kp E  &kp R  &kp T                                       &kp Y  &kp U   &kp I     &kp O   &kp P    &kp BSLH
-&kp ESC &kp BSPC  &kp A  &kp S  &kp D  &kp F  &kp G                                       &kp H  &kp J   &kp K     &kp L   &kp SEMI &kp SQT   &kp ESC
-	    &kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B &kp UP &kp DOWN   &kp LEFT &kp RIGHT  &kp N  &kp M   &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-	                    &kp LGUI &kp DEL &kp RET &kp SPACE &kp TILDE  &kp RET   &kp SPACE &kp TAB &kp BSPC &kp RALT
+        &kp ESC   &kp N1            &kp N2      &kp N3      &kp N4       &kp N5                                   &kp N6 &kp N7       &kp N8      &kp N9      &kp N0        &kp GRAVE
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	    &kp TAB   &kp SINGLE_QUOTE  &kp COMMA   &kp DOT     &kp P        &kp Y                                    &kp F  &kp G        &kp C       &kp R       &kp L         &kp SLASH
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+&kp ESC &kp BSPC  &hm LCTRL A       &hm LALT O  &hm LGUI E  &hm LSHFT U  &kp I                                    &kp D  &hm RSHFT H  &hm RGUI T  &hm RALT N  &hm RCNTRL S  &kp MINUS  &kp ESC
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	    &trans    &lt 1 SEMICOLON   &kp Q       &kp J       &kp K        &kp X &kp UP &kp DOWN &kp LEFT &kp RIGHT &kp B  &kp M        &kp W       &kp V       &lt 1 Z       &kp EQUAL
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	                   &kp LGUI  &kp DEL  &mt LA(LC(LS(LEFT_GUI))) SPACE  &kp SPACE  &kp TILDE   &trans  &trans &kp RET  &mo 2  &kp RALT
 			>;
 		    sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
+
+        layer_Layer__1 {
+            bindings = <
+        &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                                   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                   &kp N6  &kp N7  &kp N8  &kp N9  &kp N0   &trans
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &trans  &trans  &trans  &trans  &trans  &trans 
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans &trans  &trans  &trans  &trans  &trans  &trans  &trans 
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                &trans  &trans  &trans  &trans  &trans    &trans &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_Layer__2 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &trans         &trans        &trans         &trans  &trans 
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        &trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &trans         &trans        &trans         &trans  &trans 
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &kp LA(LEFT)   &kp UP_ARROW  &kp LA(RIGHT)  &trans  &trans  &trans 
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans &trans  &trans  &kp LEFT       &kp DOWN      &kp RIGHT      &trans  &trans 
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                &trans  &trans  &trans  &trans  &trans    &trans &trans  &trans  &trans  &trans
+            >;
+        };
+
 	};
 };

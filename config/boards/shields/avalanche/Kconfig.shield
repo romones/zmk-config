@@ -1,0 +1,10 @@
+config SHIELD_AVALANCHE
+    bool
+
+config SHIELD_AVALANCHE_LEFT
+	def_bool $(shields_list_contains,avalanche_left)
+	select SHIELD_AVALANCHE
+
+config SHIELD_AVALANCHE_RIGHT
+	def_bool $(shields_list_contains,avalanche_right)
+	select SHIELD_AVALANCHE

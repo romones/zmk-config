@@ -1,0 +1,31 @@
+{
+  "keyboard": "unknown",
+  "keymap": "unknown",
+  "layout": "unknown",
+  "layer_names": [
+    "default",
+    "Layer #1",
+    "Layer #2"
+  ],
+  "layers": [
+    [
+          "&kp ESCAPE",       "&kp NUMBER_1",   "&kp NUMBER_2",   "&kp NUMBER_3",     "&kp NUMBER_4", "&kp NUMBER_5",                                        "&kp NUMBER_6",      "&kp NUMBER_7",    "&kp NUMBER_8",    "&kp NUMBER_9",        "&kp NUMBER_0",     "&kp TILDE",
+             "&kp TAB",   "&kp SINGLE_QUOTE",      "&kp COMMA",        "&kp DOT",            "&kp P",        "&kp Y",                                               "&kp F",             "&kp G",           "&kp C",           "&kp R",               "&kp L",     "&kp SLASH",
+       "&kp BACKSPACE", "&mt LEFT_CONTROL A", "&mt LEFT_ALT O", "&mt LEFT_GUI E", "&mt LEFT_SHIFT U",        "&kp I",                                               "&kp D", "&mt RIGHT_SHIFT H", "&mt RIGHT_GUI T", "&mt RIGHT_ALT N", "&mt RIGHT_CONTROL S",     "&kp MINUS",
+              "&trans",    "&lt 1 SEMICOLON",          "&kp Q",          "&kp J",            "&kp K",        "&kp X",           "&kp K_MUTE", "&kp PAGE_UP",        "&kp B",             "&kp M",           "&kp W",           "&kp V",             "&lt 1 Z", "&kp BACKSLASH",
+                                    "&trans",         "&trans",         "&trans",        "&kp SPACE",       "&trans",                                              "&trans",        "&kp RETURN",           "&mo 2",          "&trans",              "&trans"
+    ], [
+       "&trans",       "&kp F1",       "&kp F2",       "&kp F3",       "&kp F4",       "&kp F5",                                     "&kp F6",       "&kp F7",       "&kp F8",       "&kp F9",      "&kp F10", "&trans",
+       "&trans", "&kp NUMBER_1", "&kp NUMBER_2", "&kp NUMBER_3", "&kp NUMBER_4", "&kp NUMBER_5",                               "&kp NUMBER_6", "&kp NUMBER_7", "&kp NUMBER_8", "&kp NUMBER_9", "&kp NUMBER_0", "&trans",
+       "&trans",       "&trans",       "&trans",       "&trans",       "&trans",       "&trans",                                     "&trans",       "&trans",       "&trans",       "&trans",       "&trans", "&trans",
+       "&trans",       "&trans",       "&trans",       "&trans",       "&trans",       "&trans",           "&trans", "&trans",       "&trans",       "&trans",       "&trans",       "&trans",       "&trans", "&trans",
+                       "&trans",       "&trans",       "&trans",       "&trans",       "&trans",                                     "&trans",       "&trans",       "&trans",       "&trans",       "&trans"
+    ], [
+       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",                               "&trans",   "&trans",         "&trans",    "&trans", "&trans", "&trans",
+       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",                               "&trans",   "&trans",         "&trans",    "&trans", "&trans", "&trans",
+       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",                               "&trans",   "&trans",   "&kp UP_ARROW",    "&trans", "&trans", "&trans",
+       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&kp LEFT", "&kp DOWN_ARROW", "&kp RIGHT", "&trans", "&trans",
+                 "&trans", "&trans", "&trans", "&trans", "&trans",                               "&trans",   "&trans",         "&trans",    "&trans", "&trans"
+    ]
+  ]
+}

@@ -1,0 +1,14 @@
+file_format: "1"
+id: avalanche
+name: Avalanche V4
+type: shield
+url: https://
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - encoder
+  - underglow
+siblings:
+  - avalanche_v4_left

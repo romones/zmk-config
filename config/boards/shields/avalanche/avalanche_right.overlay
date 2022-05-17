@@ -1,6 +1,6 @@
 #include "avalanche.dtsi"
 
-&default_transform { // The matrix transform for this board is 6 columns over because the left half is 6 columns wide according to the matrix.
+&default_transform { 
     col-offset = <7>;
 };
 
@@ -21,4 +21,8 @@
         , <&pro_micro 19 GPIO_ACTIVE_HIGH>
         , <&pro_micro 20 GPIO_ACTIVE_HIGH>
         ;
+};
+
+&left_encoder {
+    status = "okay";
 };

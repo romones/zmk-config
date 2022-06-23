@@ -7,10 +7,15 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            tapping-term-ms = <200>;
+
+            // <---[[moderate duration]]
+
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings = <&kp>, <&kp>;
+            bindings =
+                <&kp>,
+                <&kp>;
         };
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -18,14 +23,16 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
+            bindings =
+                <&kp>,
+                <&kp>;
         };
     };
 
-	keymap {
-		compatible = "zmk,keymap";
+    keymap {
+        compatible = "zmk,keymap";
 
-/*
+        /*
         &trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &trans  &trans  &trans  &trans  &trans 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         &trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &trans  &trans  &trans  &trans  &trans 
@@ -37,48 +44,36 @@
                                 &trans  &trans  &trans  &trans  &trans    &trans &trans  &trans  &trans  &trans
 */
 
-		default_layer {
-			bindings = <
-        &kp ESC   &kp N1            &kp N2      &kp N3      &kp N4       &kp N5                                   &kp N6 &kp N7       &kp N8      &kp N9      &kp N0        &kp GRAVE
-// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	    &kp TAB   &kp SINGLE_QUOTE  &kp COMMA   &kp DOT     &kp P        &kp Y                                    &kp F  &kp G        &kp C       &kp R       &kp L         &kp SLASH
-// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-&kp ESC &kp BSPC  &hm LCTRL A       &hm LALT O  &hm LGUI E  &hm LSHFT U  &kp I                                    &kp D  &hm RSHFT H  &hm RGUI T  &hm RALT N  &hm RCTRL S  &kp MINUS  &kp ESC
-// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	    &trans    &lt 1 SEMICOLON   &kp Q       &kp J       &kp K        &kp X &kp UP &kp DOWN &kp LEFT &kp RIGHT &kp B  &kp M        &kp W       &kp V       &lt 1 Z       &kp EQUAL
-// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	                   &kp LGUI  &kp DEL  &mt LA(LC(LS(LEFT_GUI))) SPACE  &kp SPACE  &kp TILDE   &trans  &trans &kp RET  &mo 2  &kp RALT
-			>;
-		    sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-		};
+        default_layer {
+            bindings = <
+  &kp ESC            &kp N1      &kp N2                          &kp N3       &kp N4     &kp N5                      &kp N6       &kp N7      &kp N8      &kp N9       &kp N0  &kp GRAVE
+  &kp TAB  &kp SINGLE_QUOTE   &kp COMMA                         &kp DOT        &kp P      &kp Y                       &kp F        &kp G       &kp C       &kp R        &kp L  &kp SLASH
+ &kp BSPC       &hm LCTRL A  &hm LALT O                      &hm LGUI E  &hm LSHFT U      &kp I                       &kp D  &hm RSHFT H  &hm RGUI T  &hm RALT N  &hm RCTRL S  &kp MINUS
+   &trans   &lt 1 SEMICOLON       &kp Q                           &kp J        &kp K      &kp X  &kp UP  &kp DOWN  &kp LEFT    &kp RIGHT       &kp B       &kp M        &kp W      &kp V  &lt 1 Z  &kp EQUAL
+  &kp ESC          &kp LGUI       &mo 2  &mt LA(LC(LS(LEFT_GUI))) SPACE    &kp SPACE  &kp TILDE                      &trans       &trans     &kp RET       &mo 2     &kp RALT             &kp ESC
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
 
         layer_Layer__1 {
             bindings = <
-        &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                                   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
-// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                   &kp N6  &kp N7  &kp N8  &kp N9  &kp N0   &trans
-// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &trans  &trans  &trans  &trans  &trans  &trans 
-// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans &trans  &trans  &trans  &trans  &trans  &trans  &trans 
-// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                &trans  &trans  &trans  &trans  &trans    &trans &trans  &trans  &trans  &trans
+ &trans     &kp F1        &kp F2    &kp F3      &kp F4  &kp F5                  &kp F6           &kp F7         &kp F8         &kp F9    &kp F10         &trans
+ &trans     &kp N1        &kp N2    &kp N3      &kp N4  &kp N5                  &kp N6           &kp N7         &kp N8         &kp N9     &kp N0  &kp BACKSLASH
+ &trans  &kp LCTRL  &kp LEFT_ALT  &kp LGUI  &kp LSHIFT  &trans                  &trans  &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp RIGHT_ALT  &kp RCTRL         &trans
+ &trans     &trans        &trans    &trans      &trans  &trans  &trans  &trans  &trans           &trans         &trans         &trans     &trans         &trans  &trans  &trans
+ &trans     &trans        &trans    &trans      &trans  &trans                  &trans           &trans         &trans         &trans     &trans                 &trans
             >;
         };
 
         layer_Layer__2 {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &trans         &trans        &trans         &trans  &trans 
-// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        &trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &trans         &trans        &trans         &trans  &trans 
-// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &kp LA(LEFT)   &kp UP_ARROW  &kp LA(RIGHT)  &trans  &trans  &trans 
-// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans &trans  &trans  &kp LEFT       &kp DOWN      &kp RIGHT      &trans  &trans 
-// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                &trans  &trans  &trans  &trans  &trans    &trans &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                  &trans              &trans        &trans         &trans    &trans     &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                  &trans            &kp HOME        &trans        &kp END    &trans     &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp LA(LEFT_ARROW)  &kp UP_ARROW  &kp LA(RIGHT)    &trans     &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans        &trans       &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                  &trans              &trans        &trans         &trans    &trans             &trans
             >;
         };
-
-	};
+    };
 };

@@ -47,11 +47,11 @@
 
         default_layer {
             bindings = <
- &kp ESC            &kp N1       &kp N2                          &kp N3      &kp N4       &kp N5                  &kp N6  &kp N7       &kp N8      &kp N9      &kp N0    &kp GRAVE
- &kp TAB  &kp SINGLE_QUOTE    &kp COMMA                         &kp DOT       &kp P        &kp Y                   &kp F   &kp G        &kp C       &kp R       &kp L    &kp SLASH
- &kp ESC          &kp BSPC  &hm LCTRL A                      &hm LALT O  &hm LGUI E  &hm LSHFT U   &kp I                   &kp D  &hm RSHFT H  &hm RGUI T  &hm RALT N  &hm RCTRL S  &kp MINUS    &kp ESC
-   &mo 3   &lt 1 SEMICOLON        &kp Q                           &kp J       &kp K        &kp X  &trans  &trans  &trans  &trans        &kp B       &kp M       &kp W        &kp V    &lt 1 Z  &kp EQUAL
-                  &kp LGUI        &mo 2  &hm LA(LC(LS(LEFT_GUI))) SPACE       &mo 4       &trans                  &trans   &mo 4      &kp RET       &mo 2    &kp RALT
+ &kp ESC            &kp N1       &kp N2                          &kp N3      &kp N4       &kp N5                            &kp N6             &kp N7       &kp N8      &kp N9      &kp N0    &kp GRAVE
+ &kp TAB  &kp SINGLE_QUOTE    &kp COMMA                         &kp DOT       &kp P        &kp Y                             &kp F              &kp G        &kp C       &kp R       &kp L    &kp SLASH
+ &kp ESC          &kp BSPC  &hm LCTRL A                      &hm LALT O  &hm LGUI E  &hm LSHFT U   &kp I                                        &kp D  &hm RSHFT H  &hm RGUI T  &hm RALT N  &hm RCTRL S  &kp MINUS    &kp ESC
+   &mo 3   &lt 1 SEMICOLON        &kp Q                           &kp J       &kp K        &kp X  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET        &kp B       &kp M       &kp W        &kp V    &lt 1 Z  &kp EQUAL
+                  &kp LGUI        &mo 2  &hm LA(LC(LS(LEFT_GUI))) SPACE       &mo 4       &trans                            &trans              &mo 4      &kp RET       &mo 2    &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;

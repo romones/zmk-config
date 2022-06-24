@@ -57,7 +57,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        SYM {
+        SYMBOLS {
             bindings = <
  &trans  &kp F1     &kp F2    &kp F3    &kp F4      &kp F5                  &kp F6  &kp F7      &kp F8    &kp F9   &kp F10         &trans
  &trans  &kp N1     &kp N2    &kp N3    &kp N4      &kp N5                  &kp N6  &kp N7      &kp N8    &kp N9    &kp N0  &kp BACKSLASH
@@ -67,13 +67,13 @@
             >;
         };
 
-        NAV {
+        NAVIGATION {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans        &trans        &trans         &trans     &trans
- &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans        &trans        &trans         &trans     &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp LA(LEFT)  &kp UP_ARROW  &kp LA(RIGHT)     &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans      &kp LEFT       &kp DOWN  &kp RIGHT  &trans  &trans
-         &trans  &trans  &trans  &trans  &trans                  &trans  &trans        &trans        &trans         &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                  &trans           &trans             &trans        &trans         &trans       &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                  &trans         &kp HOME             &trans       &kp END         &trans       &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &kp K_SCROLL_UP       &kp LA(LEFT)  &kp UP_ARROW  &kp LA(RIGHT)  &kp PAGE_UP         &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans  &kp K_SCROLL_DOWN      &kp LEFT       &kp DOWN    &kp RIGHT  &kp PAGE_DOWN  &trans
+         &trans  &trans  &trans  &trans  &trans                  &trans           &trans             &trans        &trans         &trans
             >;
         };
 
@@ -84,6 +84,16 @@
      &trans        &trans        &trans        &trans        &trans        &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
      &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                    &trans        &trans        &trans        &trans        &trans                  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        MISSION {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+         &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };

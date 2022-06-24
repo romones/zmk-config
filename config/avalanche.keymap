@@ -89,10 +89,10 @@
 
         MISSION {
             bindings = <
- &trans  &kp LCTRL  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &kp LCTRL(N1)  &kp LCTRL(N2)  &kp LCTRL(N3) &kp LCTRL(N4)  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
  &trans     &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans     &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans     &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &kp RCTRL(UP)    &trans  &trans  &trans
+ &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RCTRL(LEFT) &kp RCTRL(DOWN)  &kp RCTRL(RIGHT)  &trans  &trans  &trans
             &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
             >;
         };

@@ -89,11 +89,11 @@
 
         MISSION {
             bindings = <
- &trans  &kp LCTRL(N1)  &kp LCTRL(N2)  &kp LCTRL(N3) &kp LCTRL(N4)  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans     &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans     &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &kp RCTRL(UP)    &trans  &trans  &trans
- &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RCTRL(LEFT) &kp RCTRL(DOWN)  &kp RCTRL(RIGHT)  &trans  &trans  &trans
-            &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+ &trans  &kp LC(N1)  &kp LC(N2)  &kp LC(NUMBER_3)  &kp LC(N4)  &trans                  &trans  &trans  &trans        &trans        &trans         &trans
+ &trans      &trans      &trans            &trans      &trans  &trans                  &trans  &trans  &trans        &trans        &trans         &trans
+ &trans      &trans      &trans            &trans      &trans  &trans  &trans                  &trans  &trans    &kp RC(UP)        &trans         &trans  &trans  &trans
+ &trans      &trans      &trans            &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RC(LEFT)  &kp RC(DOWN)  &kp RC(RIGHT)  &trans  &trans
+             &trans      &trans            &trans      &trans  &trans                  &trans  &trans  &trans        &trans        &trans
             >;
         };
     };
